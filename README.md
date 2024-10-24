@@ -43,4 +43,4 @@ You have seen a few workflows in this repository. They are quality-gates to prev
 During the next four weeks, what improvement do you plan in your code-quality practice? (in your regular work, not in this repository!)
 **1) Writing soild Testcases for the requirment**
 **2) Writing testable code:**
-**     loosely coupled code , abstraction**
+loosely coupled code , abstraction
