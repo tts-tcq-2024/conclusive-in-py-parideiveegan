@@ -1,4 +1,4 @@
-import PrintingStatements.py
+import PrintingStatements
 call_print = PrintingStatement()
 CoolingTypeLimits = {'PASSIVE_COOLING':[0,35], 'HI_ACTIVE_COOLING':[0,45], 'MED_ACTIVE_COOLING':[0,40] } 
 
@@ -31,7 +31,7 @@ def send_to_controller(breachType):
   if __name__ != "__main__":
     call_print.MockprintStatement_to_controller(header,breachType)
   else:
-    call_print.printStatement_to_controller(header,breacTtype)
+    call_print.printStatement_to_controller(header,breachTtype)
 
 def send_to_email(breachType):
   recepient = "a.b@c.com"
