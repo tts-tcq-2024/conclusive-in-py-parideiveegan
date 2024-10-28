@@ -1,6 +1,6 @@
-Mock_breachType = 'NORMAL'
-Mock_header = 'NORMAL'
-Mock_recepient = 'NORMAL'
+Mock_breachType = ''
+Mock_header = ''
+Mock_recepient = ''
 class PrintingStatement():
   def printStatement_to_controller(self, header,breachType):
     header = 0xfeed
