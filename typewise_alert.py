@@ -40,5 +40,5 @@ def send_to_email(breachType):
   else:
     call_print.printStatement_to_email(recepient, breachType)
 batteryChar = {'coolingType':'PASSIVE_COOLING'}
-print (check_and_alert('TO_CONTROLLER',batteryChar,34))
+print (check_and_alert('TO_CONTROLLER',batteryChar,50))
 print (Mock_breachType)
