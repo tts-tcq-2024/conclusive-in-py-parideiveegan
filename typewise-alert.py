@@ -29,15 +29,15 @@ def check_and_alert(alertTarget, batteryChar, temperatureInC):
 def send_to_controller(breachType):
   header = 0xfeed
   if __name__ != "__main__":
-    call_print.MockprintStatement_to_controller(header,breachtype)
+    call_print.MockprintStatement_to_controller(header,breachType)
   else:
-    call_print.printStatement_to_controller(header,breachtype)
+    call_print.printStatement_to_controller(header,breacTtype)
 
 def send_to_email(breachType):
   recepient = "a.b@c.com"
   if __name__ != "__main__":
-    call_print.MockprintStatement_to_email(recepient,breachtype)
+    call_print.MockprintStatement_to_email(recepient,breachType)
   else:
-    call_print.printStatement_to_email(recepient, breachtype)
+    call_print.printStatement_to_email(recepient, breachType)
     
 
