@@ -1,5 +1,5 @@
 import unittest
-from typewise_alert import *
+from typewise-alert import *
 
 batteryChar = {'coolingType':'PASSIVE_COOLING'}
 class TypewiseTest(unittest.TestCase):
