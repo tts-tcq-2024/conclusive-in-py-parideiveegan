@@ -1,7 +1,7 @@
 Mock_breachType = ''
 Mock_header = ''
 Mock_recepient = ''
-class PrintingStatement:
+class PrintingStatement():
   def printStatement_to_controller(self, header,breachType):
     header = 0xfeed
     print(f'{header}, {breachType}')
