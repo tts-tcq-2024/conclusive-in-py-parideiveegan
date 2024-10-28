@@ -1,3 +1,5 @@
+import PrintingStatements.py
+call_print = PrintingStatement()
 CoolingTypeLimits = {'PASSIVE_COOLING':[0,35], 'HI_ACTIVE_COOLING':[0,45], 'MED_ACTIVE_COOLING':[0,40] } 
 
 def infer_breach(value, lowerLimit, upperLimit):
@@ -26,14 +28,16 @@ def check_and_alert(alertTarget, batteryChar, temperatureInC):
 
 def send_to_controller(breachType):
   header = 0xfeed
-  print(f'{header}, {breachType}')
-
+  if __name__ != "__main__":
+    call_print.MockprintStatement_to_controller(header,breachtype)
+  else:
+    call_print.printStatement_to_controller(header,breachtype)
 
 def send_to_email(breachType):
   recepient = "a.b@c.com"
-  if breachType == 'TOO_LOW':
-    print(f'To: {recepient}')
-    print('Hi, the temperature is too low')
-  elif breachType == 'TOO_HIGH':
-    print(f'To: {recepient}')
-    print('Hi, the temperature is too high')
+  if __name__ != "__main__":
+    call_print.MockprintStatement_to_email(recepient,breachtype)
+  else:
+    call_print.printStatement_to_email(recepient, breachtype)
+    
+
