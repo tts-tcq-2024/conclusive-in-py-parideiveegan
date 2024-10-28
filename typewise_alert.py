@@ -39,5 +39,6 @@ def send_to_email(breachType):
     call_print.MockprintStatement_to_email(recepient,breachType)
   else:
     call_print.printStatement_to_email(recepient, breachType)
-    
 
+print (check_and_alert('TO_CONTROLLER',batteryChar,34))
+print (Mock_breachType)
