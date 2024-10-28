@@ -23,8 +23,8 @@ def check_and_alert(alertTarget, batteryChar, temperatureInC):
   if alertTarget == 'TO_CONTROLLER':
     send_to_controller(breachType)
   elif alertTarget == 'TO_EMAIL':
-    send_to_email(breachType)
-
+    send_to_email(breachType).
+  return breachType
 
 def send_to_controller(breachType):
   header = 0xfeed
