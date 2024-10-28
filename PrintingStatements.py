@@ -14,8 +14,8 @@ class PrintingStatement:
       print(f'To: {recepient}')
       print('Hi, the temperature is too high')
   def MockprintStatement_to_controller(self, header,breachType):
-    Mock_brechType = breachtype
+    Mock_breachType = breachType
     Mock_header = header
   def MockprintStatement_to_email(self, recepient,breachType):
-    Mock_brechType = breachType
+    Mock_breachType = breachType
     Mock_recepient = recepient
