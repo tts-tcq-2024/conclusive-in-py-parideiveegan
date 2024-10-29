@@ -19,5 +19,5 @@ class PrintingStatement():
     self.Mock_header = header   
   def MockprintStatement_to_email(self, recepient,breachType):    
     self.Mock_breachType = breachType
-    slef.Mock_recepient = recepient
+    self.Mock_recepient = recepient
  
