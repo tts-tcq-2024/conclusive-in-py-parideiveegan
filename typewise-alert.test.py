@@ -11,7 +11,7 @@ class TypewiseTest(unittest.TestCase):
     self.assertTrue(check_and_alert('TO_CONTROLLER',batteryChar,34)=='NORMAL' )
     self.assertTrue(Mock_breachType == 'NORMAL')
   def test_email_msg(self):
-    self.assertTrue(check_and_alert('TO_EMAIL',batteryChar,34)=='NORMAL' and Mock_breachType == 'NORMAL')
+    self.assertTrue(check_and_alert('TO_EMAIL',batteryChar,34)=='NORMAL')
     self.assertTrue (Mock_breachType == 'NORMAL')
 if __name__ == '__main__':
   unittest.main()
