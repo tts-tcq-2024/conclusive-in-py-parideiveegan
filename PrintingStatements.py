@@ -16,6 +16,8 @@ class PrintingStatement():
   def MockprintStatement_to_controller(self, header,breachType):
     Mock_breachType = breachType
     Mock_header = header
+    print(f'{header}, {breachType}')
   def MockprintStatement_to_email(self, recepient,breachType):
+    print(breachType)
     Mock_breachType = breachType
     Mock_recepient = recepient
