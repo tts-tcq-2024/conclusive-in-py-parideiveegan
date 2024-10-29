@@ -19,5 +19,5 @@ class TypewiseTest(unittest.TestCase):
     self.assertEqual(call_print.Mock_recepient, "a.b@c.com")
     
 if __name__ == '__main__':
-  print(Mock_breachType,"test")
+  
   unittest.main()
